@@ -137,7 +137,7 @@
             },
             methods: {
                 cargarDatos() {
-                    $.get("http://localhost:3000/profesores", (data) => {
+                    $.get("https://appguardias.onrender.com/profesores", (data) => {
                         this.profesores = data;
                     });
                 },
@@ -149,7 +149,7 @@
                     }
                 },
                 cargarGuardia(id) {
-                    $.get(`http://localhost:3000/guardias/${id}`, (data) => {
+                    $.get(`https://appguardias.onrender.com/guardias/${id}`, (data) => {
                         this.guardia = data;
                         this.actualizarDiaSemana();
                     });
@@ -165,7 +165,7 @@
                     if (this.guardiaId) {
                         console.log("Guardia a actualizar:", this.guardia); // Añadir log para depuración
                         $.ajax({
-                            url: `http://localhost:3000/guardias/${this.guardiaId}`,
+                            url: `https://appguardias.onrender.com/guardias/${this.guardiaId}`,
                             type: "PUT",
                             contentType: "application/json",
                             data: JSON.stringify(this.guardia),
@@ -183,7 +183,7 @@
                     if (this.guardiaId) {
                         console.log("Guardia a eliminar:", this.guardiaId); // Añadir log para depuración
                         $.ajax({
-                            url: `http://localhost:3000/guardias/${this.guardiaId}`,
+                            url: `https://appguardias.onrender.com/guardias/${this.guardiaId}`,
                             type: "DELETE",
                             success: () => {
                                 alert("Guardia eliminada con éxito");

@@ -45,7 +45,7 @@
             },
             methods: {
                 cargarDatos() {
-                    $.get("http://localhost:3000/profesores", (data) => {
+                    $.get("https://appguardias.onrender.com/profesores", (data) => {
                         this.profesores = data;
                     });
                 },
@@ -56,7 +56,7 @@
                 firmarGuardia() {
                     if (this.guardiaId && this.profesorSeleccionado) {
                         $.ajax({
-                            url: `http://localhost:3000/guardias/${this.guardiaId}`,
+                            url: `https://appguardias.onrender.com/guardias/${this.guardiaId}`,
                             type: "PATCH",
                             contentType: "application/json",
                             data: JSON.stringify({ registro_firmado: true, sustituto_id: this.profesorSeleccionado }),
