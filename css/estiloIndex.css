@@ -203,4 +203,9 @@
         margin-left: 5px;
         display: inline-block;
     }
+
+    .bg-indigo-100 {
+        margin: 0 auto; /* Centrar el botón en pantallas pequeñas */
+        display: block; /* Asegurar que ocupe toda la línea */
+    }
 }

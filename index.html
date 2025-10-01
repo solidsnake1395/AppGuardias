@@ -12,6 +12,25 @@
         />
         <script src="https://cdn.jsdelivr.net/npm/vue@3.2.0/dist/vue.global.js"></script>
         <link rel="stylesheet" href="css/estiloIndex.css" />
+        <style>
+            /* Ajustar el tamaño del botón en pantallas pequeñas */
+            @media (max-width: 640px) {
+                .actualizar-datos-btn {
+                    width: auto; /* Ajustar el ancho automáticamente */
+                    padding: 0.5rem 1rem; /* Reducir el relleno */
+                    font-size: 0.875rem; /* Reducir el tamaño de fuente */
+                }
+            }
+
+            /* Centrar la fecha en el rango de semana con más precisión */
+            .rango-semana {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%; /* Asegurar que ocupa toda la altura del contenedor */
+                text-align: center; /* Alinear el texto */
+            }
+        </style>
     </head>
     <body class="bg-gray-100 text-gray-800 min-h-screen">
 
@@ -28,7 +47,7 @@
                     >
                         Semana anterior
                     </button>
-                    <span class="text-lg font-semibold">{{ rangoSemana }}</span>
+                    <span class="text-lg font-semibold rango-semana">{{ rangoSemana }}</span>
                     <button
                         class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg shadow transition-colors duration-200 flex items-center"
                         @click="cambiarSemana(1)"
@@ -129,7 +148,7 @@
                                             </p>
                                             <p v-if="guardia.registro_firmado" class="mt-1 text-green-600 font-medium flex items-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                                 </svg>
                                                 Firmada por: <span class="ml-1">{{ obtenerProfesorNombre(guardia.sustituto_id) }}</span>
                                             </p>
@@ -191,7 +210,7 @@
                 
                 <!-- Resumen de Guardias -->
                 <div class="bg-white p-4 rounded-lg shadow-md mt-4">
-                    <div class="flex justify-between items-center">
+                    <div class="flex flex-wrap justify-between items-center">
                         <div class="flex space-x-6">
                             <div class="flex items-center">
                                 <span class="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
@@ -206,15 +225,17 @@
                                 <span>Total: <span class="font-medium">{{ guardias.length }}</span></span>
                             </div>
                         </div>
-                        <button
-                            class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 py-2 px-3 rounded-lg flex items-center transition-colors duration-200"
-                            @click="cargarDatos"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                            </svg>
-                            Actualizar datos
-                        </button>
+                        <div class="w-full sm:w-auto mt-4 sm:mt-0">
+                            <button
+                                class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 py-2 px-3 rounded-lg flex items-center justify-center transition-colors duration-200 actualizar-datos-btn"
+                                @click="cargarDatos"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                </svg>
+                                Actualizar datos
+                            </button>
+                        </div>
                     </div>
                 </div>
             </main>
