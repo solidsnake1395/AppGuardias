@@ -60,10 +60,10 @@ const app = Vue.createApp({
         async cargarDatos() {
             this.cargando = true;
             try {
-                let responseProfesores = await fetch("http://localhost:3000/profesores");
+                let responseProfesores = await fetch("https://appguardias.onrender.com/profesores");
                 this.profesores = await responseProfesores.json();
 
-                let responseGuardias = await fetch("http://localhost:3000/guardias");
+                let responseGuardias = await fetch("https://appguardias.onrender.com/guardias");
                 let guardias = await responseGuardias.json();
 
                 this.guardias = guardias;

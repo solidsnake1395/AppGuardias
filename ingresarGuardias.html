@@ -156,12 +156,12 @@
           // Cargar datos de los profesores y guardias
           cargarDatos() {
             // Obtener los datos de los profesores
-            $.get("http://localhost:3000/profesores", (data) => {
+            $.get("https://appguardias.onrender.com/profesores", (data) => {
               this.profesores = data;
             });
 
             // Obtener los datos de las guardias
-            $.get("http://localhost:3000/guardias", (data) => {
+            $.get("https://appguardias.onrender.com/guardias", (data) => {
               this.guardias = data;
             });
           },
@@ -253,7 +253,7 @@
 
             // Hacer el POST con JSON
             $.ajax({
-              url: "http://localhost:3000/guardias",
+              url: "https://appguardias.onrender.com/guardias",
               type: "POST",
               contentType: "application/json", // Establecer el tipo de contenido como JSON
               data: JSON.stringify(nuevaGuardia), // Convertir los datos a JSON
