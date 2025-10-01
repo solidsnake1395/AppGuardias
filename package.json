@@ -1,11 +1,10 @@
 {
-  "name": "fakeapirest",
+  "name": "app-guardias",
   "version": "1.0.0",
-  "description": "Backend falso con JSON Server",
-  "type": "commonjs",
+  "description": "App demo de guardias de profesores con JSON Server",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000"
+    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0 --public ./"
   },
   "dependencies": {
     "json-server": "^0.17.3"
