@@ -2,7 +2,7 @@
   "profesores": [
     {
       "id": "1",
-      "nombre": "Ana Martínez",
+      "nombre": "Luis García",
       "asignaturas": [
         "Matemáticas",
         "Física"
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "nombre": "Juan Pérez",
+      "nombre": "María López",
       "asignaturas": [
         "Lengua",
         "Literatura"
@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "nombre": "Carlos Gómez",
+      "nombre": "Javier Torres",
       "asignaturas": [
         "Historia",
         "Civismo"
@@ -29,7 +29,7 @@
     },
     {
       "id": "4",
-      "nombre": "Laura Fernández",
+      "nombre": "Carmen Ruiz",
       "asignaturas": [
         "Biología",
         "Química"
@@ -38,7 +38,7 @@
     },
     {
       "id": "5",
-      "nombre": "José López",
+      "nombre": "Sergio Fernández",
       "asignaturas": [
         "Inglés",
         "Francés"
@@ -47,7 +47,7 @@
     },
     {
       "id": "6",
-      "nombre": "Marta Rodríguez",
+      "nombre": "Elena Martínez",
       "asignaturas": [
         "Geografía",
         "Economía"
@@ -56,7 +56,7 @@
     },
     {
       "id": "7",
-      "nombre": "Pedro Sánchez",
+      "nombre": "Pablo Sánchez",
       "asignaturas": [
         "Educación Física",
         "Salud y Bienestar"
@@ -65,7 +65,7 @@
     },
     {
       "id": "8",
-      "nombre": "Isabel Ruiz",
+      "nombre": "Isabel Gómez",
       "asignaturas": [
         "Música",
         "Artes Plásticas"
@@ -93,132 +93,89 @@
   ],
   "guardias": [
     {
-      "id": "eef4",
-      "fecha_guardia": "2025-03-24",
-      "hora": "09:25 - 10:20",
+      "id": "a1b2",
+      "fecha_guardia": "2025-09-25",
+      "hora": "08:30 - 09:25",
       "profesor_id": "1",
-      "grupo": "1",
-      "aula": "cebollas",
-      "solucion": "no",
-      "alumnos_problematicos": false,
-      "registro_firmado": false,
-      "dia": "Lunes",
-      "fecha_creacion": "16/03/2025, 22:31:21",
-      "fecha_guardia_formateada": "24/03/2025"
-    },
-    {
-      "id": "ec79",
-      "fecha_guardia": "2025-03-03",
-      "hora": "10:20 - 11:15",
-      "profesor_id": "4",
-      "grupo": "1",
+      "grupo": "1º A",
       "aula": "101",
       "solucion": "no",
       "alumnos_problematicos": false,
       "registro_firmado": false,
-      "dia": "Lunes",
-      "fecha_creacion": "16/03/2025, 22:39:07",
-      "fecha_guardia_formateada": "03/03/2025"
+      "dia": "Jueves",
+      "fecha_creacion": "25/09/2025, 10:00:00",
+      "fecha_guardia_formateada": "25/09/2025"
     },
     {
-      "id": "bced",
-      "fecha_guardia": "2025-03-17",
+      "id": "c3d4",
+      "fecha_guardia": "2025-09-26",
       "hora": "09:25 - 10:20",
-      "profesor_id": "5",
-      "grupo": "ewwe",
-      "aula": "cebollas",
-      "solucion": "ssss",
+      "profesor_id": "2",
+      "grupo": "2º B",
+      "aula": "202",
+      "solucion": "no",
       "alumnos_problematicos": false,
       "registro_firmado": false,
-      "dia": "Lunes",
-      "fecha_creacion": "16/03/2025, 22:44:24",
-      "fecha_guardia_formateada": "17/03/2025"
+      "dia": "Viernes",
+      "fecha_creacion": "26/09/2025, 11:00:00",
+      "fecha_guardia_formateada": "26/09/2025"
     },
     {
-      "id": "bced",
-      "fecha_guardia": "2025-03-17",
-      "hora": "09:25 - 10:20",
-      "profesor_id": "5",
-      "grupo": "ewwe",
-      "aula": "cebollas",
-      "solucion": "ssss",
-      "alumnos_problematicos": false,
-      "registro_firmado": false,
-      "dia": "Lunes",
-      "fecha_creacion": "16/03/2025, 22:44:24",
-      "fecha_guardia_formateada": "17/03/2025"
-    },
-    {
-      "id": "bced",
-      "fecha_guardia": "2025-03-17",
-      "hora": "09:25 - 10:20",
-      "profesor_id": "5",
-      "grupo": "ewwe",
-      "aula": "cebollas",
-      "solucion": "ssss",
-      "alumnos_problematicos": false,
-      "registro_firmado": false,
-      "dia": "Lunes",
-      "fecha_creacion": "16/03/2025, 22:44:24",
-      "fecha_guardia_formateada": "17/03/2025"
-    },
-    {
-      "id": "bced",
-      "fecha_guardia": "2025-03-17",
-      "hora": "09:25 - 10:20",
-      "profesor_id": "5",
-      "grupo": "ewwe",
-      "aula": "cebollas",
-      "solucion": "ssss",
-      "alumnos_problematicos": false,
-      "registro_firmado": false,
-      "dia": "Lunes",
-      "fecha_creacion": "16/03/2025, 22:44:24",
-      "fecha_guardia_formateada": "17/03/2025"
-    },
-    {
-      "id": "ac97",
-      "fecha_guardia": "2025-03-19",
+      "id": "e5f6",
+      "fecha_guardia": "2025-09-30",
       "hora": "10:20 - 11:15",
       "profesor_id": "3",
-      "grupo": "12",
-      "aula": "1",
+      "grupo": "3º C",
+      "aula": "303",
+      "solucion": "no",
+      "alumnos_problematicos": false,
+      "registro_firmado": true,
+      "dia": "Martes",
+      "fecha_creacion": "30/09/2025, 12:00:00",
+      "fecha_guardia_formateada": "30/09/2025",
+      "sustituto_id": "5"
+    },
+    {
+      "id": "g7h8",
+      "fecha_guardia": "2025-10-01",
+      "hora": "11:15 - 12:10",
+      "profesor_id": "4",
+      "grupo": "4º D",
+      "aula": "404",
       "solucion": "no",
       "alumnos_problematicos": false,
       "registro_firmado": false,
       "dia": "Miércoles",
-      "fecha_creacion": "17/03/2025, 12:49:14",
-      "fecha_guardia_formateada": "19/03/2025"
+      "fecha_creacion": "01/10/2025, 13:00:00",
+      "fecha_guardia_formateada": "01/10/2025"
     },
     {
-      "id": "99b8",
-      "fecha_guardia": "2025-03-17",
-      "hora": "08:30 - 09:25",
-      "profesor_id": "2",
-      "grupo": "1",
-      "aula": "2º",
-      "solucion": "nada",
-      "alumnos_problematicos": true,
-      "registro_firmado": true,
-      "dia": "Lunes",
-      "fecha_creacion": "17/03/2025, 13:35:01",
-      "fecha_guardia_formateada": "17/03/2025",
-      "sustituto_id": "2"
-    },
-    {
-      "id": "39b3",
-      "fecha_guardia": "2025-03-18",
-      "hora": "10:20 - 11:15",
-      "profesor_id": "3",
-      "grupo": "1",
-      "aula": "c",
-      "solucion": "xc",
+      "id": "i9j0",
+      "fecha_guardia": "2025-10-02",
+      "hora": "12:10 - 13:05",
+      "profesor_id": "5",
+      "grupo": "1º B",
+      "aula": "105",
+      "solucion": "no",
       "alumnos_problematicos": false,
-      "registro_firmado": true,
-      "dia": "Martes",
-      "fecha_creacion": "17/03/2025, 13:35:29",
-      "fecha_guardia_formateada": "18/03/2025",
-      "sustituto_id": "2"
+      "registro_firmado": false,
+      "dia": "Jueves",
+      "fecha_creacion": "02/10/2025, 14:00:00",
+      "fecha_guardia_formateada": "02/10/2025"
+    },
+    {
+      "id": "k1l2",
+      "fecha_guardia": "2025-10-03",
+      "hora": "13:05 - 14:00",
+      "profesor_id": "6",
+      "grupo": "2º A",
+      "aula": "206",
+      "solucion": "no",
+      "alumnos_problematicos": false,
+      "registro_firmado": false,
+      "dia": "Viernes",
+      "fecha_creacion": "03/10/2025, 15:00:00",
+      "fecha_guardia_formateada": "03/10/2025"
     }
   ]
 }
