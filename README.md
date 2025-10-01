@@ -1,5 +1,3 @@
-# proyectoABP
-
 
 # Sistema de Gestión de Guardias de Profesores 📚
 
